@@ -8,6 +8,9 @@ import { ImgComponent } from './components/img/img.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { ProductsComponent } from './components/products/products.component';
 import { NavComponent } from './components/nav/nav.component';
+import { ReversePipe } from './pipes/reverse.pipe';
+import { TimeAgoPipe } from './pipes/time-ago.pipe';
+import { VoweltonumberPipe } from './pipes/voweltonumber.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { NavComponent } from './components/nav/nav.component';
     ImgComponent,
     ProductoComponent,
     ProductsComponent,
-    NavComponent
+    NavComponent,
+    ReversePipe,
+    TimeAgoPipe,
+    VoweltonumberPipe
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@
 La cantidad de productos {{myShoppingCart.length}}--El total es {{total}}
 </p>
 <div class="products--grid">
+  <p>Today:{{today | timeAgo}}</p>
   <app-producto [product]="product"
    *ngFor="let product of products"
   (addedProduct)="onAddToShoppingCart($event)"
