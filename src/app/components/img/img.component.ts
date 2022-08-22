@@ -10,6 +10,7 @@ export class ImgComponent implements OnInit {
   @Output() loaded=new EventEmitter <string> ();
   imgDefault:string='../../../assets/mario.jpg';
   counter=0;
+  counterFn:number | undefined;
   constructor() {
     //before render
     //no correr async--once time is created
